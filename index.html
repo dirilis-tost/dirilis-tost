@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant menu with follow along highlighter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Wellfleet&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="wrapper">
+
+  <h2>Menümüz</h2>
+
+  <div class="buttons-container">
+    <a href="#" class="button" data-target="pizzaMenu">Tostlar</a>
+    <a href="#" class="button button--is-active" data-target="noodlesMenu">Hamburgerler</a>
+     <a href="#" class="button" data-target="salataMenu">Pilavlar</a>
+     <a href="#" class="button" data-target="icecekMenu">İçecekler</a>
+  </div>
+
+  <!-- Tost Menu Başı -->
+  
+  <div class="menu menu--is-visible" id="pizzaMenu">
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Klasik Anam Babam Usülü Tost</h3>
+      </div>
+      <img class="item_img" src="img/klasik.jpg" alt="Klasik Anam Babam Usülü Tost">
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Sucuklu Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>70</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Kaşarlı Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>70</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Karışık Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>80</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Yumurtalı Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Full Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>100</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Sebzeli Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Kavurmalı Kaşarlı</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>120</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Kavurmalı Kaşarlı Yumurtalı</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>130</span>
+
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Beyaz Peynirli Sebzeli</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Tulum Peynirli Otlu</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Ezine Peynirli Sebzeli</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Çedar Peynirli Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Çedar Peynirli Full Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>120</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Kasap Sucuklu Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>130</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Patso</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>100</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Atom</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Kepek Ekmeği Kaşarlı Sebzeli</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Klasik Kepek Ekmeği Kıymalı Peynir Sebzeli</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>120</span>
+      </div>
+      <p class="item__description"></p>
+
+    </div>
+ 
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Bazlama Tost</h3>
+        <span class="item__dots"></span>
+      </div>
+      <img class="item_img" src="img/bazlama.jpg" alt="Bazlama Tost">
+      <div class="item__header">
+        <span class="item__scale">Bazlama Sucuklu Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>100</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Kaşarlı Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>100</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Karışık Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>120</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Full Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Yumurtalı Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>130</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Sebzeli Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>130</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Beyaz Peynirli Sebzeli</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>130</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Tulum Peynirli Otlu</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>130</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Ezine Peynirli Sebzeli</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>130</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Peynir Kokteyl 5 Adet</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>180</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Çedar Peynirli Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Kasap Sucuklu Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>200</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama kıymalı Kaşarlı</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama kıymalı Kaşarlı yumurtalı</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Kavurmalı Kaşarlı</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>180</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Kavurmalı Kaşarlı Yumurtalı</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>200</span>
+      </div>
+      <p class="item__description"></p>
+      <div class="item__header">
+        <span class="item__scale">Bazlama Patso</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Bazlama Atom</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>180</span>
+          <p class="item__description"></p>
+      
+
+      
+
+      
+
+      
+      </div>
+    </div>
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Ayvalık Tost</h3>
+        <span class="item__dots"></span>
+      </div>
+      <img class="item_img" src="img/ayvalk-tostu.jpg" alt="Ayvalık Tost">
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Sucuklu Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Kaşarlı Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Karışık Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Yumurtalı Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Full Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Kavurmalı Kaşarlı</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Beyaz Peynirli</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Çedar Peynirli Full Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Ayvalık Patso</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>x</span>
+      </div>
+      <p class="item__description"></p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">İzmir Kumru</h3>
+        <span class="item__dots"></span>
+      </div>
+      <img class="item_img" src="img/izmir-kumru.jpeg" alt="İzmir Kumru">
+      
+
+      <div class="item__header">
+        <span class="item__scale">Kumru Karışık Tost</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>130</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Kumru Full Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Kumru Yumurtalı Karışık</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Kumru Beyaz Peynirli</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>180</span>
+      </div>
+      <p class="item__description"></p>
+
+      <div class="item__header">
+        <span class="item__scale">Kumru Patso</span>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>180</span>
+      </div>
+      <p class="item__description"></p>
+
+    </div>
+  </div>
+ <!-- Tost Menu Sonu -->
+  
+ <!-- Hamburger Menu Başı -->
+  <div class="menu" id="noodlesMenu">
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">XL Et Burger</h3>
+        <span class="item__dots"></span><span class="item__price">
+          <span class="my-default-font">₺</span>200</span>
+      </div>
+      <img class="item_img" src="img/hamburger.jpeg" alt="Et Burger">
+      <p class="item__description">110 gr. Hamburger Eti, Domates, Turşu, Marul, Kaşar, Cips, Ketçap, Mayonez</p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">XL Tavuk Burger</h3>
+        <span class="item__dots"></span><span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <img class="item_img" src="img/hamg1.jpeg" alt="Tavuk Burger">
+      <p class="item__description">Tavuk Köftesi, Marul, Turşu, Domates, Cips, Ketçap, Mayonez</p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">XL Cheese Burger</h3>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>220</span>
+      </div>
+      <img class="item_img" src="img/jamg2.jpeg" alt="Cheese Burger">
+      <p class="item__description">110 gr. Hamburger Eti, Kaşar, Cheddar Peyniri, Marul, Turşu, Domates, Ketçap, Mayonez</p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Tavuk Şinitzel Tabağı</h3>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <img class="item_img" src="img/tavuk-snitzel.jpeg" alt="Tavuk Şinitzel Tabağı">
+      <p class="item__description">2 adet Tavuk Şinitzel, 1 Porsiyon Cips, Domates, Turşu, Ketçap, Mayonez</p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Patates Tabağı</h3>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <img class="item_img" src="img/patates-tabagi.jpeg" alt="Patates Tabağı">
+      <p class="item__description">4 adet Patates Kroket, 4 adet Soğan Halkası, 1 Porsiyon Cips, Yeşillik, Ketçap, Mayonez</p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Sucuk Ekmek</h3>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>120</span>
+      </div>
+      <img class="item_img" src="img/sucuk-ekmek.jpeg" alt="Sucuk Ekmek">
+      <p class="item__description">Sucuk, Marul, Domates</p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Köfte Ekmek</h3>
+        <span class="item__dots"></span>
+        <span class="item__price">
+          <span class="my-default-font">₺</span>150</span>
+      </div>
+      <img class="item_img" src="img/kofte-ekmek.jpeg" alt="Köfte Ekmek">
+      <p class="item__description">Köfte, Marul, Domates</p>
+    </div>
+   
+  </div> <!-- Hamburger Menu Sonu -->
+
+ 
+  <!-- Pilav Menu Başı -->
+
+  
+  <div class="menu"id="salataMenu">
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Köri Soslu Tavuk Pilav</h3>
+        <span class="item__dots"></span><span class="item__price">
+          <span class="my-default-font">₺</span>120</span>
+      </div>
+      <img class="item_img" src="img/kori-soslu-pilav.jpg" alt="Köri Soslu Tavuk Pilav">
+      <p class="item__description"></p>
+    </div>
+  
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Mangal Soslu Tavuk Pilav</h3>
+        <span class="item__dots"></span><span class="item__price">
+          <span class="my-default-font">₺</span>120</span>
+      </div>
+      <img class="item_img" src="img/mangal-soslu-t.JPG" alt="Mangal Soslu Tavuk Pilav">
+      <p class="item__description"></p>
+    </div>
+  
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Tavuklu Pilav</h3>
+        <span class="item__dots"></span><span class="item__price">
+          <span class="my-default-font">₺</span>100</span>
+      </div>
+      <img class="item_img" src="img/tavuklu-pilav.jpg" alt="Tavuklu Pilav">
+      <p class="item__description"></p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Nohut Pilav</h3>
+        <span class="item__dots"></span><span class="item__price">
+          <span class="my-default-font">₺</span>100</span>
+      </div>
+      <img class="item_img" src="img/nohut-p.jpg" alt="Nohut Pilav">
+      <p class="item__description"></p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Tavuk İncikli Pilav</h3>
+        <span class="item__dots"></span><span class="item__price">
+          <span class="my-default-font">₺</span>120</span>
+      </div>
+      <img class="item_img" src="img/incikli-tavuk-pilav.JPG" alt="Tavuk İncikli Pilav">
+      <p class="item__description"></p>
+    </div>
+
+    <div class="item">
+      <div class="item__header">
+        <h3 class="item__title">Sade Pilav</h3>
+        <span class="item__dots"></span><span class="item__price">
+          <span class="my-default-font">₺</span>90</span>
+      </div>
+      <img class="item_img" src="img/pilav.jpg" alt="Sade Pilav">
+      <p class="item__description"></p>
+    </div>
+
+
+  </div>
+
+  
+  
+  <!-- Pilav Menu Sonu -->
+
+<!--İçecek Menu Başı -->
+<div class="menu" id="icecekMenu">
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Su</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>10</span>
+    </div>
+    <img class="item_img" src="img/su.jpg" alt="Su">
+    <p class="item__description"></p>
+  </div>
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Kola</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>45</span>
+    </div>
+    <img class="item_img" src="img/kola.jpg" alt="Kola">
+    <p class="item__description"></p>
+  </div>
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Fanta</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>45</span>
+    </div>
+    <img class="item_img" src="img/fanta.jpg" alt="Fanta">
+    <p class="item__description"></p>
+  </div>
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Gazoz</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>35</span>
+    </div>
+    <img class="item_img" src="img/sprite.jpg" alt="Sprite">
+    <p class="item__description"></p>
+  </div>
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Fusetea</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>45</span>
+    </div>
+    <img class="item_img" src="img/fusetea.jpg" alt="FuseTea">
+    <p class="item__description"></p>
+  </div>
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Ayran</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>0</span>
+    </div>
+    <img class="item_img" src="img/ayran.jpg" alt="Ayran">
+    <p class="item__description"></p>
+  </div>
+
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Soda</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>20</span>
+    </div>
+    <img class="item_img" src="https://italyan-atesi.github.io/fotograflar23/avsar.png" alt="Soda Çeşitleri">
+    <p class="item__description"></p>
+  </div>
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Nescafe</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>25</span>
+    </div>
+    <img class="item_img" src="img/nescafe.jpg" alt="Nescafe">
+    <p class="item__description"></p>
+  </div>
+
+  <div class="item">
+    <div class="item__header">
+      <h3 class="item__title">Çay</h3>
+      <span class="item__dots"></span>
+      <span class="item__price">
+        <span class="my-default-font">₺</span>15</span>
+    </div>
+    <img class="item_img" src="img/cayJPG.JPG" alt="Çay">
+    <p class="item__description"></p>
+  </div>
+
+</div>
+<!--İçecek Menu Sonu -->
+
+  
+</div> <!-- End Wrapper -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
